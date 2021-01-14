@@ -3,7 +3,7 @@
 
 :root {
   /* Fonts  */
-  --fsg: 135px; /* Time and Greeting */
+  --fsg: 90px; /* Time and Greeting */
   --fsm: 75px;  /* Date */
   --fss: 25px;  /* Greetings and Weather widger */
   --fses: 16px; /* Links List */
@@ -35,8 +35,12 @@
 
 /* Dark theme  */
 .darktheme {
-  --accent: #186efd60; /* Hover color */
-  --bg: #1e1f21;       /* Background color */
+  /*--accent: #186efd60; /* Hover color */
+  --accent: #231ffd81; /* Hover color */
+  /*--bg: #1e1f21;       /* Background color */
+  --bg: #0133AE; /*Faire dégradé*/
+  /*--bg : linear-gradient(#0133ae, #cf41b1);*/
+  /*--bg: linear-gradient(#e66465, #9198e5);*/
   --sbg: #2c2d31;      /* Cards color */
   --fg: #d8dee9;       /* Foreground color */
   --imgcol: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));    /* Filter color */
@@ -54,8 +58,10 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg);
-  background-image: var(--imgcol), var(--imgbg);
+  /*background-color: var(--bg);*/
+  /*background : -moz-linear-gradient(#0242e2, #cf41b1);*/
+  background : -moz-linear-gradient(#2661f5, #f06ed3);
+  /*background-image: var(--imgcol), var(--imgbg);*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +74,7 @@ body {
   top: 0;
   color: var(--fg);
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   cursor: pointer;
   background-color: #00000000;
@@ -102,7 +108,7 @@ body {
 
 .card {
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: var(--sbg);
 }
 .card:hover {
@@ -233,7 +239,7 @@ body {
   background-color: var(--sbg);
   width: 100%;
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .qlink__link-1 {
   grid-row: 1;
@@ -299,7 +305,7 @@ body {
   color: var(--fg);
   margin-top: 1px;
   padding: 6px 12px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
 }
 .qlist__link:hover {
